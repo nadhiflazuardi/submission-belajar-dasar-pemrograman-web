@@ -1,4 +1,13 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'lunchtype22regular';
+  src: url('/fonts/lunchtype22-regular-webfont.woff') format('woff2'),
+       url('/fonts/lunchtype22-regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+h1, h2, a, p {
+  font-family: 'lunchtype22regular';
 }
 
