@@ -11,3 +11,80 @@ h1, h2, a, p {
   font-family: 'lunchtype22regular';
 }
 
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #212529;
+  padding: 5px 10px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.cv-button a {
+  background-color: yellow;
+  color: black;
+  border-radius: 999;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.cv-button a:hover {
+  background-color: #212529;
+  color: white;
+  transition: all .15s ease-in-out;
+}
+
+footer.footer {
+  background-color: #212529;
+  display: flex;
+}
+
+footer.footer .social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+footer.footer .social-media li {
+  list-style-type: none;
+  flex: 1;
+}
+
+footer.footer .social-media ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer.footer #submit {
+  background-color: yellow;
+}
+
+footer.footer #submit:hover {
+  background-color: #212529;
+  color: white;
+  transition: all .15s ease-in-out;
+  border-radius: 999;
+}

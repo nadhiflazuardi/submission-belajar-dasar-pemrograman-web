@@ -6,6 +6,8 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
   <header>
@@ -17,7 +19,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <div class="cv-button">
-        <button>Download CV</button>
+        <a href="#">Download CV</a>
       </div>
     </nav>
   </header>
@@ -71,9 +73,23 @@
     </aside>
   </main>
   
-  <footer>
-    <div class="form"></div>
-    <div class="contact" id="contact"></div>
+  <footer class="footer">
+    <div class="form">
+      <form action="#">
+        <input type="text" id="name" name="name" placeholder="Your Name"><br>
+        <input type="email" id="email" name="email" placeholder="Your Email"><br>
+        <textarea name="msg" id="msg" cols="20" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" id="submit" value="Send">
+      </form>
+    </div>
+    <div class="social-media">
+      <ul>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>  
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+    </div>
   </footer>
 </body>
 </html>
