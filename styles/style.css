@@ -16,6 +16,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  padding-top: 85px;
 }
 
 header.navbar-container {
@@ -25,6 +26,8 @@ header.navbar-container {
   margin-inline: auto;
   align-items: center;
   justify-content: space-around;
+  position: fixed;
+  top: 0;
 }
 
 header.navbar-container .logo a {
@@ -65,9 +68,37 @@ nav ul li a {
   transition: all .15s ease-in-out;
 }
 
+main {
+
+}
+
+main #content #introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 footer.footer {
   background-color: #212529;
   display: flex;
+  justify-content: space-around;
+}
+
+footer.footer .input-field {
+  background-color: #212529;
+}
+
+footer.footer .social-media h1, h2 {
+  color: white;
+}
+
+footer.footer .social-media h2 {
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer.footer .social-media p {
+  color: #909090;
 }
 
 footer.footer .social-media ul {
@@ -99,5 +130,5 @@ footer.footer #submit:hover {
 }
 
 .foto-diri img {
-  width: 100px;
+  width: 200px;
 }
