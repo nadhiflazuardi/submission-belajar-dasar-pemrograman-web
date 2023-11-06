@@ -7,8 +7,8 @@
 
 }
 
-h1, h2, a, p {
-  font-family: 'lunchtype22regular';
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 85px;
+
+  font-family: 'lunchtype22regular';
 }
 
 header.navbar-container {
@@ -28,11 +30,14 @@ header.navbar-container {
   justify-content: space-around;
   position: fixed;
   top: 0;
+
+  z-index: 999;
 }
 
 header.navbar-container .logo a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
 }
 
 nav a {
@@ -53,11 +58,11 @@ nav ul li a {
   text-decoration: none;
 }
 
-.cv-button a {
+header.navbar-container .cv-button a {
   background-color: #ffd500;
   color: black;
-  border-radius: 999;
-  padding: 10px;
+  border-radius: 999px;
+  padding: 10px 25px;
   margin: 10px;
   text-decoration: none;
 }
@@ -69,7 +74,30 @@ nav ul li a {
 }
 
 main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+main #content #introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main #content #introduction h1, img {
+  margin: 20px;
+}
+
+main #content #introduction .intro-text h1{
+  color: white;
+  background-color: black;
+  border-radius: 999px;
+  padding: 15px;
+}
+
+aside {
+  width: 20%;
 }
 
 main #content #introduction {
@@ -84,8 +112,30 @@ footer.footer {
   justify-content: space-around;
 }
 
+footer.footer form {
+  margin-top: 30px;
+}
+
+footer.footer #submit {
+  font-size: 1.1rem;
+  background-color: #ffd500;
+  border-radius: 999px;
+  padding: 10px 55px;
+  margin: 25px 0px;
+}
+
 footer.footer .input-field {
   background-color: #212529;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 1px;
+  margin: 15px;
+}
+
+footer.footer .input-field::placeholder {
+  color: white;
+  font-size: 1.1rem;
 }
 
 footer.footer .social-media h1, h2 {
@@ -118,10 +168,6 @@ footer.footer .social-media ul li a {
   color: white;
 }
 
-footer.footer #submit {
-  background-color: yellow;
-}
-
 footer.footer #submit:hover {
   background-color: #212529;
   color: white;
@@ -130,5 +176,5 @@ footer.footer #submit:hover {
 }
 
 .foto-diri img {
-  width: 200px;
+  width: 400px;
 }
