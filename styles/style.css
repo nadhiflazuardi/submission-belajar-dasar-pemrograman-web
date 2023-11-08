@@ -70,19 +70,11 @@ header.navbar-container .cv-button a {
   font-size: 1.3rem;
 }
 
-.cv-button a:hover {
+header.navbar-container .cv-button a:hover {
   background-color: #212529;
   color: white;
   transition: all .15s ease-in-out;
-}
-
-main {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around; */
-  margin-left: 30px;
-  margin-bottom: 50px;
-  /* height: 500px; */
+  /* kasih border */
 }
 
 main #content #introduction {
@@ -92,17 +84,24 @@ main #content #introduction {
   margin-bottom: 80px;
 }
 
+main #content #introduction .foto-diri, .intro-text {
+  margin: 0px 50px;
+}
+
 main #content #introduction .foto-diri img {
+  padding-right: 0px;
   height: 400px;
+  border-radius: 999px;
 }
 
 main #content #introduction h1, img {
   margin: none;
+  padding: none;
 }
 
 main #content #introduction h1 {
   color: white;
-  background-color: black;
+  background-color: #212529;
   border-radius: 999px;
   padding: 20px 20px;
 }
@@ -112,12 +111,6 @@ main #content #introduction h2 {
   background-color: #ffd500;
   border-radius: 999px;
   padding: 20px 20px;
-}
-
-main #content #introduction {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 main #content #about-me {
@@ -143,28 +136,37 @@ main #content #about-me .text p {
 
 main aside {
   background-color: #F9F9F9;
-  width: 20%;
-}
-
-main aside header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  width: 100%;
 }
 
-main aside header h2 {
-  color: black;
-  margin-bottom: 0;
+main aside .aside-text {
+  width: 570px;
+  margin-right: 50px;
+  padding: 50px 0px;
 }
 
-main aside section {
-  padding-left: 40px;
-  padding-bottom: 30px;
+main aside .aside-text h1 {
+  font-size: 2.3rem;
+}
+
+main aside .aside-text p {
+  width: 540px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+main aside .aside-img img {
+  height: 445px;
+  border-radius: 50px;
 }
 
 main aside table {
   text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 main aside table td {
