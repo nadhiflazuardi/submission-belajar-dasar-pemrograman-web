@@ -114,14 +114,61 @@ main #content #introduction h2 {
   padding: 20px 20px;
 }
 
-aside {
-  /* width: 20%; */
-}
-
 main #content #introduction {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+main #content #about-me {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+main #content #about-me .text {
+  width: 20%;
+  margin: 0px 10px;
+}
+
+main #content #about-me .text h1 {
+  font-size: 2rem;
+}
+
+main #content #about-me .text p {
+  color: #909090;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+main aside {
+  background-color: #F9F9F9;
+  width: 20%;
+}
+
+main aside header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+main aside header h2 {
+  color: black;
+  margin-bottom: 0;
+}
+
+main aside section {
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+main aside table {
+  text-align: left;
+}
+
+main aside table td {
+  padding-left: 20px;
 }
 
 footer.footer {
@@ -185,7 +232,12 @@ footer.footer .social-media a {
 }
 
 footer.footer .social-media p {
-  color: #909090;
+  color: white;
+  line-height: 0.5;
+}
+
+footer.footer .social-media h1 {
+  margin-bottom:40px;
 }
 
 footer.footer .social-media ul {
@@ -202,7 +254,7 @@ footer.footer .social-media li {
 
 footer.footer .social-media ul li a {
   text-decoration: none;
-  color: white;
+  color: #ffd500;
 }
 
 footer.footer #submit:hover {
