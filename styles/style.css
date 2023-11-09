@@ -140,6 +140,7 @@ main aside {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 main aside .aside-text {
@@ -184,9 +185,15 @@ footer.footer form {
 }
 
 footer.footer .form h1 {
-  margin-top: 55px;
+  padding-top: 55px;
   color: white;
   margin-left: 75px;
+}
+
+footer.footer .submit-button {
+  display: flex;
+  justify-content: end;
+  padding-right: 12px;
 }
 
 footer.footer #submit {
@@ -264,4 +271,8 @@ footer.footer #submit:hover {
   color: white;
   transition: all .15s ease-in-out;
   border-radius: 999;
+}
+
+@media screen and (max-width: px) {
+  
 }
