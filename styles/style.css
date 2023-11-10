@@ -48,15 +48,15 @@ nav a {
 }
 
 header.navbar-container .nav-list ul {
-  margin: 40px;
   display: flex;
   list-style-type: none;
+  padding-inline: 10rem;
   justify-content: space-between;
+  gap: 5rem;
 }
 
-nav ul li a {
+header.navbar-container .nav-list ul li a {
   color: #909090;
-  margin: 0px 40px;
   text-decoration: none;
 }
 
@@ -273,6 +273,17 @@ footer.footer #submit:hover {
   border-radius: 999;
 }
 
-@media screen and (max-width: px) {
-  
+@media screen and (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  #content .foto-diri {
+    justify-content: center;
+  }
 }
