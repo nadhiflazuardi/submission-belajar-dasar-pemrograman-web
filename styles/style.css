@@ -279,6 +279,34 @@ footer.footer #submit:hover {
   border-radius: 999;
 }
 
+/* Extra Large devices (1279px and down) */
+@media screen and (max-width: 1279) {
+  body {
+    background-color: pink;
+  }
+
+  header.navbar-container {
+    display: flex;
+    gap: 0rem;
+  }
+
+  header.navbar-container .logo {
+    flex: 1;
+  }
+
+  header.navbar-container .nav-list {
+    flex: 1;
+  }
+
+  header.navbar-container .nav-list ul {
+    padding-inline: 100;
+  }
+
+  header.navbar-container .cv-button {
+    flex: 1;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and down) */
 @media screen and (max-width: 767px) {
   body {
@@ -289,6 +317,7 @@ footer.footer #submit:hover {
     flex-direction: column;
     height: 200px;
     gap: 1rem;
+    margin: auto;
   }
 
   header.navbar-container .logo a {
@@ -348,6 +377,7 @@ footer.footer #submit:hover {
 
   footer.footer .form .submit-button {
     width: 100%;
+    justify-content: left;
   }
 
   footer.footer .social-media {
