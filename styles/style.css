@@ -86,11 +86,8 @@ main #content #introduction {
   display: flex;
   align-items: center;
   justify-content: center ;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   gap: 8rem;
-}
-
-main #content #introduction .foto-diri, .intro-text {
 }
 
 main #content #introduction .foto-diri img {
@@ -143,13 +140,11 @@ main aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding-bottom: 20px;
+  gap: 6rem;
 }
 
 main aside .aside-text {
-  width: 570px;
-  margin-right: 50px;
   padding: 50px 0px;
 }
 
@@ -158,7 +153,7 @@ main aside .aside-text h1 {
 }
 
 main aside .aside-text p {
-  width: 540px;
+  width: 300px;
   font-size: 1.2rem;
   line-height: 1.8;
 }
@@ -179,21 +174,16 @@ main aside table td {
 }
 
 footer.footer {
-  padding-top: 55px;
+  padding-top: 35px;
+  padding-bottom: 15px;
   background-color: #212529;
   display: flex;
   justify-content: center;
   gap: 6rem;
 }
 
-footer.footer form {
-  /* margin: 40px 60px; */
-}
-
 footer.footer .form h1 {
-  /* padding-top: 55px; */
   color: white;
-  /* margin-left: 75px; */
 }
 
 footer.footer .submit-button {
@@ -222,10 +212,6 @@ footer.footer .input-field {
 footer.footer .input-field::placeholder {
   color: white;
   font-size: 1.2rem;
-}
-
-footer.footer .social-media {
-  /* margin: 40px 200px; */
 }
 
 footer.footer .social-media h1, h2 {
@@ -280,15 +266,6 @@ footer.footer #submit:hover {
 
 /* Extra Large devices (1279px and down) */
 @media screen and (max-width: 1279px) {
-  html {
-    width: 100%;
-  }
-
-  body {
-    background-color: red;
-    width: 100%;
-  }
-
   header.navbar-container {
     justify-content: space-around;
     gap: 0;
@@ -298,40 +275,68 @@ footer.footer #submit:hover {
     margin: 0;
   }
 
-  header.navbar-container .nav-list {
-  
-  }
-
   header.navbar-container .nav-list ul {
     flex-wrap: wrap;
     column-gap: 2rem;
   }
 
-  header.navbar-container .cv-button {
+  main #content #introduction {
+    gap: 1.5rem;
+  }
 
+  main #content #introduction .intro-text h1, h2 {
+    font-size: 20px;
+  }
+
+  main aside .aside-img img {
+    height: 350px;
+    width: auto;
   }
 
   footer.footer {
     flex-flow: column wrap;
+    gap: 1rem;
+    padding-bottom: 55px;
+  }
+
+  footer.footer .form {
+    margin-left: 100px;
   }
 
   footer.footer .form .submit-button {
     width: 100%;
     justify-content: left;
   }
+
+  footer.footer .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer.footer .social-media h1 {
+    margin: 10px 0px;
+  }
+
+  footer.footer .social-media ul {
+    display: flex;
+    gap: 3rem;
+    margin-top: 30px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 250px;
+    padding-top: 200px;
   }
 
   header.navbar-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
     flex-direction: column;
-    height: 200px;
-    gap: 1rem;
-    margin: auto;
+    height: 180px;
+    gap: 0.6rem;
   }
 
   header.navbar-container .logo a {
@@ -353,10 +358,6 @@ footer.footer #submit:hover {
     flex-flow: column wrap;
   }
 
-  main #content, aside {
-    padding: 0;
-  }
-
   main #about-me {
     flex-flow: column wrap;
     align-items: center;
@@ -370,10 +371,13 @@ footer.footer #submit:hover {
 
   main aside {
     flex-flow: column wrap;
+    gap: 1rem;
+    padding-bottom: 40px;
   }
 
   main aside .aside-text {
     margin: auto;
+    padding: 0;
   }
 
   main aside .aside-img {
@@ -386,7 +390,7 @@ footer.footer #submit:hover {
   }
 
   footer.footer .form .input-field {
-    width: 500px;
+    width: 300px;
   }
 
   footer.footer .form .submit-button {
@@ -406,5 +410,44 @@ footer.footer #submit:hover {
 
   footer.footer .social-media ul {
     padding-top: 50px;
+  }
+}
+
+/* Small devices (mobile phones, 480px and down) */
+@media screen and (max-width: 480px) {
+  main #content #introduction {
+    gap: 2rem;
+  }
+
+  main #content #introduction .intro-text h1, h2 {
+    font-size: 1.1rem;
+  }
+
+  main aside {
+    gap: 0;
+  }
+
+  main aside .aside-text {
+    padding: 0;
+  }
+
+  main aside .aside-text {
+    word-wrap: break-word;
+  }
+
+  footer.footer .form {
+    margin: 0px 40px;
+  }
+
+  footer.footer .form .input-field {
+    width: 70%;
+  }
+
+  footer.footer .social-media p {
+    font-size: 20px;
+  }
+
+  footer.footer .social-media ul {
+    padding: 0;
   }
 }
