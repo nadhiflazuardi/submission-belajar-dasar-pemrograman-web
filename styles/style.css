@@ -31,6 +31,7 @@ header.navbar-container {
   position: fixed;
   top: 0;
   height: 75px;
+  gap: 9rem;
 
   z-index: 999;
 }
@@ -39,7 +40,6 @@ header.navbar-container .logo a {
   text-decoration: none;
   color: white;
   font-size: 1.9rem;
-  margin: 0px 20px;
 }
 
 nav a {
@@ -50,9 +50,8 @@ nav a {
 header.navbar-container .nav-list ul {
   display: flex;
   list-style-type: none;
-  padding-inline: 10rem;
-  justify-content: space-between;
   gap: 5rem;
+  padding: 0;
 }
 
 header.navbar-container .nav-list ul li a {
@@ -65,7 +64,6 @@ header.navbar-container .cv-button a {
   color: black;
   border-radius: 999px;
   padding: 10px 40px;
-  margin: 40px;
   text-decoration: none;
   font-size: 1.3rem;
 }
@@ -181,25 +179,26 @@ main aside table td {
 }
 
 footer.footer {
+  padding-top: 55px;
   background-color: #212529;
   display: flex;
   justify-content: center;
+  gap: 6rem;
 }
 
 footer.footer form {
-  margin: 40px 60px;
+  /* margin: 40px 60px; */
 }
 
 footer.footer .form h1 {
-  padding-top: 55px;
+  /* padding-top: 55px; */
   color: white;
-  margin-left: 75px;
+  /* margin-left: 75px; */
 }
 
 footer.footer .submit-button {
   display: flex;
   justify-content: end;
-  padding-right: 12px;
 }
 
 footer.footer #submit {
@@ -222,11 +221,11 @@ footer.footer .input-field {
 
 footer.footer .input-field::placeholder {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 footer.footer .social-media {
-  margin: 40px 200px;
+  /* margin: 40px 200px; */
 }
 
 footer.footer .social-media h1, h2 {
@@ -280,35 +279,50 @@ footer.footer #submit:hover {
 }
 
 /* Extra Large devices (1279px and down) */
-@media screen and (max-width: 1279) {
+@media screen and (max-width: 1279px) {
+  html {
+    width: 100%;
+  }
+
   body {
-    background-color: pink;
+    background-color: red;
+    width: 100%;
   }
 
   header.navbar-container {
-    display: flex;
-    gap: 0rem;
+    justify-content: space-around;
+    gap: 0;
   }
 
   header.navbar-container .logo {
-    flex: 1;
+    margin: 0;
   }
 
   header.navbar-container .nav-list {
-    flex: 1;
+  
   }
 
   header.navbar-container .nav-list ul {
-    padding-inline: 100;
+    flex-wrap: wrap;
+    column-gap: 2rem;
   }
 
   header.navbar-container .cv-button {
-    flex: 1;
+
+  }
+
+  footer.footer {
+    flex-flow: column wrap;
+  }
+
+  footer.footer .form .submit-button {
+    width: 100%;
+    justify-content: left;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   body {
     padding-top: 250px;
   }
